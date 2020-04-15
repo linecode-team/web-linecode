@@ -1,0 +1,171 @@
+/* Custom CSS by RioCode */
+
+body {
+	margin-top: 56px;
+}
+
+.text-primary {
+	color: #0090ff !important;
+}
+
+.bg-primary {
+	background: #0090ff !important;
+}
+
+.bg-primary-transparant {
+	background: #0090ff !important;
+	opacity: .8;
+}
+
+.rounded {
+	border-radius: 15px !important;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.justify {
+	text-align: justify;
+}
+
+.bg-light {
+	background: #fafafa !important;
+}
+
+.hover-shadow:hover {
+	box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.02);
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+	height: 0px
+}
+
+img {
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	user-drag: none;
+	user-select: none;
+}
+
+#overlay{
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0,0,0,0.9);
+	transition: 1s 0.4s;
+}
+
+#progress{
+	height: 5px;
+	background: #0090ff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50px;
+}
+
+#progstat{
+	font-size: 0.7em;
+	letter-spacing: 3px;
+	position: absolute;
+	top: 50%;
+	margin-top: -40px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
+
+.home-jumbotron {
+	padding: 0;
+	margin-bottom: 0;
+	border-radius: 0;
+	background: #0090ff;
+}
+
+.home-jumbotron img {
+	margin-bottom: -1px;
+}
+
+.jumbotron-title h1 {
+	font-size: 45px;
+	font-weight: bold;
+}
+
+#about {
+	position: relative;
+}
+
+#about .monitor {
+	position: relative;
+}
+
+#about .monitor .about-img-1 {
+	position: relative;
+	z-index: 99;
+}
+
+#about .monitor .about-img-2 {
+	position: absolute;
+	right: 0;
+}
+
+#about p {
+	font-size: 19px;
+}
+
+#starting {
+	background-image: url('../images/starting/bg-pattern.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#starting a.btn {
+	font-size: 20px;
+	font-weight: bold;
+	color: #0090ff;
+	border: 2px solid #fff;
+}
+
+#starting a.btn:hover {
+	background: transparent;
+	color: #fff;
+}
+
+#footer img {
+	position: relative;
+	bottom: -1px;
+}
+
+#footer .footer-img-1 {
+	width: 200px;
+}
+
+@media (min-width: 300px) and (max-width: 576px) {
+	#jumbotron h6 {
+		text-align: center;
+		margin-top: 25px;
+	}
+
+	#jumbotron h1 {
+		text-align: center;
+		font-size: 30px;
+	}
+
+	#jumbotron h4 {
+		text-align: center;
+		font-size: 20px;
+	}
+
+	#about p {
+		font-size: 16px;
+		margin: 0 0;
+	}
+}
