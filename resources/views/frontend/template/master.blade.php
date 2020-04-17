@@ -57,7 +57,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <img src="{{ asset('lib/images/logo/lc-white-potrait.png') }}" class="img-fluid footer-img-1 mb-5">
+                        <img src="{{ asset('lib/images/logo/lc-white-potrait.png') }}" class="img-fluid footer-img-1 mb-5   ">
                         <h6 class="text-white bold">Copyright &copy; Linecode 2020 | All Right Reserve</h6>
                     </div>
                 </div>
@@ -87,23 +87,18 @@
     <!-- Carousel js -->
     <script src="{{ asset('lib/plugins/owl-carousel/owl.carousel.min.js') }}"></script>
     <script>
-        $('#testimonials-list').owlCarousel({
-            loop: true,
-            center: true,
-            items: 3,
-            margin: 0,
-            autoplay: true,
-            dots:true,
-            autoplayTimeout: 8500,
-            smartSpeed: 450,
+        $('.owl-carousel').owlCarousel({
+            margin: 10,
+            nav: true,
+            navText: ["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
             responsive: {
                 0: {
                     items: 1
                 },
-                768: {
-                    items: 2
+                600: {
+                    items: 3
                 },
-                1170: {
+                1000: {
                     items: 3
                 }
             }
